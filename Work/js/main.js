@@ -50,28 +50,28 @@ function load() {
 
 // sending message
 
-let btn = document.getElementById('btn')
-btn.addEventListener('click',function(e){
-  e.preventDefault()
-  let name = document.getElementById('name').value;
-  let email = document.getElementById('email').value;
-  let subject = document.getElementById('subject').value;
-  let gender = document.getElementById('gender').value;
-  let state = document.getElementById('state').value;
-  let occupation = document.getElementById('occupation').value;
-  let message = document.getElementById('message').value;
-  let body = 'Name: '+ name + '<br/> Email:' + email+ '<br/> Subject:' + subject + ' <br/> Gender:' + gender + ' <br/> State:' + state + ' <br/> Occupation:' + occupation +   'Message:'+ message;
-  Email.send({
-      Host : "smtp.gmail.com",
-      Username : "joshuaadisa161202@gmail.com",
-      Password : "afgrpkpbwbpnhhzs",
-      To : 'joshuaadisa161202@gmail.com',
-      From : email,
-      Subject : subject,
-      Body : body
-  }).then(
-    message => alert(message)
-  ).catch((error)=>{
-      console.log(error);
-  });
-}) 
+// let btn = document.getElementById('btn')
+// btn.addEventListener('click',function(e){
+//   e.preventDefault()
+//   let name = document.getElementById('name').value;
+//   let email = document.getElementById('email').value;
+//   let subject = document.getElementById('subject').value;
+//   let gender = document.getElementById('gender').value;
+//   let state = document.getElementById('state').value;
+//   let occupation = document.getElementById('occupation').value;
+//   let message = document.getElementById('message').value;
+//   let body = 'Name: '+ name + '<br/> Email:' + email+ '<br/> Subject:' + subject + ' <br/> Gender:' + gender + ' <br/> State:' + state + ' <br/> Occupation:' + occupation +   'Message:'+ message;
+//   Email.send({
+//       Host : "smtp.gmail.com",
+//       Username : "joshuaadisa161202@gmail.com",
+//       Password : "afgrpkpbwbpnhhzs",
+//       To : 'joshuaadisa161202@gmail.com',
+//       From : email,
+//       Subject : subject,
+//       Body : body
+//   }).then(
+//     message => alert(message)
+//   ).catch((error)=>{
+//       console.log(error);
+//   });
+// }) 
